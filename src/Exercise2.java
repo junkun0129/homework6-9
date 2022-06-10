@@ -11,9 +11,10 @@ public class Exercise2 {
 
 
     public static int multi(int num){
-        
+        if(num <= 1)
+            return num;
 
-        return num + (num - 1);
+        return num + multi(num - 1);
     }
 }
 
